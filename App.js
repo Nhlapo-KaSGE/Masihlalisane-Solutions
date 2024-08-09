@@ -5,5 +5,5 @@ import BackgroundPage from './components/BackgroundPage'; // Import with the cor
 export default function App() {
   return <BackgroundPage />; // Use the component with capitalized name
 }
-
+//This is the render page
 
