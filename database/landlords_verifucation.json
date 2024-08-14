@@ -1,0 +1,9 @@
+[
+  {"Comments": "##This just an example##"},
+
+    { 
+        "idNumber": "L12345",
+        "email": "john.doe@landlord.com",
+        "verified": false
+      }
+]
