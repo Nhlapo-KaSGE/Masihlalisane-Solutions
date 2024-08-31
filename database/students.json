@@ -2,10 +2,10 @@
     {"Comments": "##This just an example##"},
 
     {
-        "studentNumber": "S12345678",
-        "name": "John",
-        "surname": "Doe",
-        "email": "john.doe@myuwc.ac",
+        "studentNumber": "",
+        "name": "",
+        "surname": "",
+        "email": "",
         "password": "hashedPassword123"
       }
 ]
