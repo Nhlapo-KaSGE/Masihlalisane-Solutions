@@ -7,5 +7,7 @@
         "surname": "Doe",
         "email": "john.doe@myuwc.ac",
         "password": "hashedPassword123"
+        
       }
 ]
+

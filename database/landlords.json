@@ -1,16 +1,144 @@
-
-
-[ 
-    {"Comments": "##This just an example##"},
-
-    
+{
+  "landlords": [
     {
-    "idNumber": "L67890",
-    "name": "Jane",
-    "surname": "Smith",
-    "email": "jane.smith@landlord.com",
-    "password": "hashedPassword456",
-    "verified": true
-  }
-
-]
+      "id": "landlord1",
+      "name": "Alice",
+      "surname": "Johnson",
+      "idNumber": "ID123456789",
+      "email": "alice.johnson@example.com"
+    },
+    {
+      "id": "landlord2",
+      "name": "Bob",
+      "surname": "Smith",
+      "idNumber": "ID987654321",
+      "email": "bob.smith@example.com"
+    },
+    {
+      "id": "landlord3",
+      "name": "Charlie",
+      "surname": "Brown",
+      "idNumber": "ID564738291",
+      "email": "charlie.brown@example.com"
+    },
+    {
+      "id": "landlord4",
+      "name": "Daisy",
+      "surname": "Miller",
+      "idNumber": "ID192837465",
+      "email": "daisy.miller@example.com"
+    },
+    {
+      "id": "landlord5",
+      "name": "Ethan",
+      "surname": "Wilson",
+      "idNumber": "ID374829101",
+      "email": "ethan.wilson@example.com"
+    },
+    {
+      "id": "landlord6",
+      "name": "Fiona",
+      "surname": "Moore",
+      "idNumber": "ID485920374",
+      "email": "fiona.moore@example.com"
+    },
+    {
+      "id": "landlord7",
+      "name": "George",
+      "surname": "Taylor",
+      "idNumber": "ID675849201",
+      "email": "george.taylor@example.com"
+    },
+    {
+      "id": "landlord8",
+      "name": "Hannah",
+      "surname": "Anderson",
+      "idNumber": "ID283746510",
+      "email": "hannah.anderson@example.com"
+    },
+    {
+      "id": "landlord9",
+      "name": "Ian",
+      "surname": "Thomas",
+      "idNumber": "ID910283746",
+      "email": "ian.thomas@example.com"
+    },
+    {
+      "id": "landlord10",
+      "name": "Jasmine",
+      "surname": "Jackson",
+      "idNumber": "ID736291048",
+      "email": "jasmine.jackson@example.com"
+    },
+    {
+      "id": "landlord11",
+      "name": "Kevin",
+      "surname": "White",
+      "idNumber": "ID194827365",
+      "email": "kevin.white@example.com"
+    },
+    {
+      "id": "landlord12",
+      "name": "Laura",
+      "surname": "Harris",
+      "idNumber": "ID283746195",
+      "email": "laura.harris@example.com"
+    },
+    {
+      "id": "landlord13",
+      "name": "Mike",
+      "surname": "Martin",
+      "idNumber": "ID485920183",
+      "email": "mike.martin@example.com"
+    },
+    {
+      "id": "landlord14",
+      "name": "Nina",
+      "surname": "Garcia",
+      "idNumber": "ID736291204",
+      "email": "nina.garcia@example.com"
+    },
+    {
+      "id": "landlord15",
+      "name": "Oscar",
+      "surname": "Clark",
+      "idNumber": "ID849203715",
+      "email": "oscar.clark@example.com"
+    },
+    {
+      "id": "landlord16",
+      "name": "Paula",
+      "surname": "Lewis",
+      "idNumber": "ID293847560",
+      "email": "paula.lewis@example.com"
+    },
+    {
+      "id": "landlord17",
+      "name": "Quincy",
+      "surname": "Walker",
+      "idNumber": "ID657483920",
+      "email": "quincy.walker@example.com"
+    },
+    {
+      "id": "landlord18",
+      "name": "Rachel",
+      "surname": "Young",
+      "idNumber": "ID839201746",
+      "email": "rachel.young@example.com"
+    },
+    {
+      "id": "landlord19",
+      "name": "Samuel",
+      "surname": "King",
+      "idNumber": "ID120394856",
+      "email": "samuel.king@example.com"
+    },
+    {
+      "id": "landlord20",
+      "name": "Tina",
+      "surname": "Scott",
+      "idNumber": "ID473829105",
+      "email": "tina.scott@example.com"
+    }
+  ]
+}
