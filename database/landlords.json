@@ -1,0 +1,16 @@
+
+
+[ 
+    {"Comments": "##This just an example##"},
+
+    
+    {
+    "idNumber": "L67890",
+    "name": "Jane",
+    "surname": "Smith",
+    "email": "jane.smith@landlord.com",
+    "password": "hashedPassword456",
+    "verified": true
+  }
+
+]

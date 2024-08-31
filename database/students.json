@@ -1,0 +1,11 @@
+[
+    {"Comments": "##This just an example##"},
+
+    {
+        "studentNumber": "S12345678",
+        "name": "John",
+        "surname": "Doe",
+        "email": "john.doe@myuwc.ac",
+        "password": "hashedPassword123"
+      }
+]

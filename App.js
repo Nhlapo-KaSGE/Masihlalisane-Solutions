@@ -1,9 +1,24 @@
 // App.js
 import React from 'react';
-import BackgroundPage from './components/BackgroundPage'; // Import with the correct casing
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import BackgroundPage from './components/BackgroundPage';
+import LoginPage from './components/login/LoginPage';
+import RegisterPage from './components/login/RegisterPage'; // Import RegisterPage
+
+const Stack = createStackNavigator();
 
 export default function App() {
-  return <BackgroundPage />; // Use the component with capitalized name
+  return (
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="BackgroundPage" component={BackgroundPage} />
+        <Stack.Screen name="LoginPage" component={LoginPage} />
+        <Stack.Screen name="RegisterPage" component={RegisterPage} /> 
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
-//This is the render page
+
+
 
