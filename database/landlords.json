@@ -2,143 +2,143 @@
   "landlords": [
     {
       "id": "landlord1",
-      "name": "Alice",
-      "surname": "Johnson",
-      "idNumber": "ID123456789",
-      "email": "alice.johnson@example.com"
+      "name": "Abraham",
+      "surname": "Kearns",
+      "idNumber": "5508165045086",
+      "email": "leighk091@gmail.com"
     },
     {
       "id": "landlord2",
-      "name": "Bob",
-      "surname": "Smith",
-      "idNumber": "ID987654321",
-      "email": "bob.smith@example.com"
+      "name": "Tariq",
+      "surname": "Issel",
+      "idNumber": "6606295265084",
+      "email": "tariq.issel@gmail.com"
     },
     {
       "id": "landlord3",
-      "name": "Charlie",
-      "surname": "Brown",
-      "idNumber": "ID564738291",
-      "email": "charlie.brown@example.com"
+      "name": "Ruth Beverley Anne",
+      "surname": "Harker",
+      "idNumber": "6204140248081",
+      "email": "ruthharker62@gmail.com"
     },
     {
       "id": "landlord4",
-      "name": "Daisy",
-      "surname": "Miller",
-      "idNumber": "ID192837465",
-      "email": "daisy.miller@example.com"
+      "name": "Verna",
+      "surname": "Fredericks",
+      "idNumber": "6910250102088",
+      "email": "vernfredr@gmail.com"
     },
     {
       "id": "landlord5",
-      "name": "Ethan",
-      "surname": "Wilson",
-      "idNumber": "ID374829101",
-      "email": "ethan.wilson@example.com"
+      "name": "Aubrey",
+      "surname": "Lukas",
+      "idNumber": "7604255578082",
+      "email": "rajjelecservice@gmail.com"
     },
     {
       "id": "landlord6",
-      "name": "Fiona",
-      "surname": "Moore",
-      "idNumber": "ID485920374",
-      "email": "fiona.moore@example.com"
+      "name": "Ryan",
+      "surname": "Adriaanse",
+      "idNumber": "9209085207080",
+      "email": "nacboy.adriaanse@gmail.com"
     },
     {
       "id": "landlord7",
-      "name": "George",
-      "surname": "Taylor",
-      "idNumber": "ID675849201",
-      "email": "george.taylor@example.com"
+      "name": "Bryan",
+      "surname": "Daniels",
+      "idNumber": "8009035236085",
+      "email": "bryanbrindley13@gmail.com"
     },
     {
       "id": "landlord8",
-      "name": "Hannah",
-      "surname": "Anderson",
-      "idNumber": "ID283746510",
-      "email": "hannah.anderson@example.com"
+      "name": "Zelna Yolanda Ann",
+      "surname": "Jacobs",
+      "idNumber": "6603280071080",
+      "email": "keego.batteries@gmail.com"
     },
     {
       "id": "landlord9",
-      "name": "Ian",
-      "surname": "Thomas",
-      "idNumber": "ID910283746",
-      "email": "ian.thomas@example.com"
+      "name": "Marsherline",
+      "surname": "Kennedy",
+      "idNumber": "8101100044088",
+      "email": "Marsherline.kennedy@gmail.com"
     },
     {
       "id": "landlord10",
-      "name": "Jasmine",
-      "surname": "Jackson",
-      "idNumber": "ID736291048",
-      "email": "jasmine.jackson@example.com"
+      "name": "Esmaralda",
+      "surname": "Missoe",
+      "idNumber": "7803060171089",
+      "email": "ezzymissoe@gmail.com"
     },
     {
       "id": "landlord11",
-      "name": "Kevin",
-      "surname": "White",
-      "idNumber": "ID194827365",
-      "email": "kevin.white@example.com"
+      "name": "Monique",
+      "surname": "Trout",
+      "idNumber": "8512110090087",
+      "email": "monique.trout85@gmail.com"
     },
     {
       "id": "landlord12",
-      "name": "Laura",
-      "surname": "Harris",
-      "idNumber": "ID283746195",
-      "email": "laura.harris@example.com"
+      "name": "Mfanafuthi Lungelo",
+      "surname": "Nkosi",
+      "idNumber": "9412265428084",
+      "email": "nkosimlf@gmail.com"
     },
     {
       "id": "landlord13",
-      "name": "Mike",
-      "surname": "Martin",
-      "idNumber": "ID485920183",
-      "email": "mike.martin@example.com"
+      "name": "Tracy",
+      "surname": "Lindt",
+      "idNumber": "8906050065085",
+      "email": "tracylindt3@gmail.com"
     },
     {
       "id": "landlord14",
-      "name": "Nina",
-      "surname": "Garcia",
-      "idNumber": "ID736291204",
-      "email": "nina.garcia@example.com"
+      "name": "Denzel",
+      "surname": "Solomons",
+      "idNumber": "7305115196087",
+      "email": "joas@pepclo.co.za"
     },
     {
       "id": "landlord15",
-      "name": "Oscar",
-      "surname": "Clark",
-      "idNumber": "ID849203715",
-      "email": "oscar.clark@example.com"
+      "name": "Grant",
+      "surname": "Visagie",
+      "idNumber": "9012195049081",
+      "email": "grant2132@gmail.com"
     },
     {
       "id": "landlord16",
-      "name": "Paula",
-      "surname": "Lewis",
-      "idNumber": "ID293847560",
-      "email": "paula.lewis@example.com"
+      "name": "Barenice",
+      "surname": "Burt",
+      "idNumber": "-",
+      "email": "bareniceburt@gmail.com"
     },
     {
       "id": "landlord17",
-      "name": "Quincy",
-      "surname": "Walker",
-      "idNumber": "ID657483920",
-      "email": "quincy.walker@example.com"
+      "name": "Peter",
+      "surname": "Donson",
+      "idNumber": "6812185179084",
+      "email": "peter.donson152@gmail.com"
     },
     {
       "id": "landlord18",
-      "name": "Rachel",
-      "surname": "Young",
-      "idNumber": "ID839201746",
-      "email": "rachel.young@example.com"
+      "name": "UAM Properties (Pty) Ltd",
+      "surname": "-",
+      "idNumber": "2021/770938/07",
+      "email": "uamproperties@gmail.com"
     },
     {
       "id": "landlord19",
-      "name": "Samuel",
-      "surname": "King",
-      "idNumber": "ID120394856",
-      "email": "samuel.king@example.com"
+      "name": "UAM Properties (Pty) Ltd",
+      "surname": "-",
+      "idNumber": "2021/770938/07",
+      "email": "uamproperties@gmail.com"
     },
     {
       "id": "landlord20",
-      "name": "Tina",
-      "surname": "Scott",
-      "idNumber": "ID473829105",
-      "email": "tina.scott@example.com"
+      "name": "Beverley",
+      "surname": "Cloete",
+      "idNumber": "6709280565086",
+      "email": "beverley.cloete@gmail.com"
     }
   ]
 }
