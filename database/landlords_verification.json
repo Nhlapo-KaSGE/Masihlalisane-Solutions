@@ -3,102 +3,16 @@
     {
       "id": "landlord1",
       "idNumber": "5508165045086",
-      "email": "leighk091@gmail.com"
+      "email": "leighk091@gmail.com",
+      "verified": false
     },
     {
-      "id": "landlord2",
-      "idNumber": "6606295265084",
-      "email": "tariq.issel@gmail.com"
-    },
-    {
-      "id": "landlord3",
-      "idNumber": "6204140248081",
-      "email": "ruthharker62@gmail.com"
-    },
-    {
-      "id": "landlord4",
-      "idNumber": "6910250102088",
-      "email": "vernfredr@gmail.com"
-    },
-    {
-      "id": "landlord5",
-      "idNumber": "7604255578082",
-      "email": "rajjelecservice@gmail.com"
-    },
-    {
-      "id": "landlord6",
-      "idNumber": "9209085207080",
-      "email": "nacboy.adriaanse@gmail.com"
-    },
-    {
-      "id": "landlord7",
-      "idNumber": "8009035236085",
-      "email": "bryanbrindley13@gmail.com"
-    },
-    {
-      "id": "landlord8",
-      "idNumber": "6603280071080",
-      "email": "keego.batteries@gmail.com"
-    },
-    {
-      "id": "landlord9",
-      "idNumber": "8101100044088",
-      "email": "Marsherline.kennedy@gmail.com"
-    },
-    {
-      "id": "landlord10",
-      "idNumber": "7803060171089",
-      "email": "ezzymissoe@gmail.com"
-    },
-    {
-      "id": "landlord11",
-      "idNumber": "8512110090087",
-      "email": "monique.trout85@gmail.com"
-    },
-    {
-      "id": "landlord12",
-      "idNumber": "9412265428084",
-      "email": "nkosimlf@gmail.com"
-    },
-    {
-      "id": "landlord13",
-      "idNumber": "8906050065085",
-      "email": "tracylindt3@gmail.com"
-    },
-    {
-      "id": "landlord14",
-      "idNumber": "7305115196087",
-      "email": "joas@pepclo.co.za"
-    },
-    {
-      "id": "landlord15",
-      "idNumber": "9012195049081",
-      "email": "grant2132@gmail.com"
-    },
-    {
-      "id": "landlord16",
-      "idNumber": "-",
-      "email": "bareniceburt@gmail.com"
-    },
-    {
-      "id": "landlord17",
-      "idNumber": "6812185179084",
-      "email": "peter.donson152@gmail.com"
-    },
-    {
-      "id": "landlord18",
-      "idNumber": "2021/770938/07",
-      "email": "uamproperties@gmail.com"
-    },
-    {
-      "id": "landlord19",
-      "idNumber": "2021/770938/07",
-      "email": "uamproperties@gmail.com"
-    },
-    {
-      "id": "landlord20",
-      "idNumber": "6709280565086",
-      "email": "beverley.cloete@gmail.com"
+      "id": "landlord23",
+      "idNumber": "0206195632083",
+      "email": "mphoantoniamthonjeni@gmail.com",
+      "verified": true,
+      "password": "&M02083"
     }
+    
   ]
 }

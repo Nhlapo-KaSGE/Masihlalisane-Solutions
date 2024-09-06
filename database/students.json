@@ -1,13 +1,9 @@
 [
-    {"Comments": "##This just an example##"},
-
-    {
-        "studentNumber": "",
-        "name": "",
-        "surname": "",
-        "email": "",
-        "password": "hashedPassword123"
-        
-      }
+  {
+    "studentNumber": "4129962",
+    "name": "Nkululeko",
+    "surname": "Nhlapo",
+    "email": "4129962@myuwc.ac.za",
+    "password": "%Nl4129962"
+  }
 ]
-
