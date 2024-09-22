@@ -1,78 +1,105 @@
-import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, Dimensions } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons'; // Importing Ionicons for icons
-import Carousel from 'react-native-snap-carousel';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image, TextInput } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-const { width: screenWidth } = Dimensions.get('window');
+const StudentHomePage = ({ navigation }) => {
+  const accommodations = [
+    { title: 'Accommodation 1 (Parrow)', description: 'Beautiful room in a shared house, close to UWC.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 2 (Parrow)', description: 'Spacious apartment with all amenities included.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 3 (Parrow)', description: 'Cozy flat close to shops.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 4 (Belhar)', description: 'Modern studio, 10 minutes from campus.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 5 (Belhar)', description: 'Large house with a garden.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 6 (Belhar)', description: 'Newly renovated apartment.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 7 (Belhar)', description: 'Quiet room in a family home.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 8 (Bellville South)', description: 'Shared house with friendly roommates.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 9 (Bellville South)', description: 'Safe and comfortable living space.', image: 'https://via.placeholder.com/200' },
+    { title: 'Accommodation 10 (Kuilsriver)', description: 'Spacious bedroom with balcony.', image: 'https://via.placeholder.com/200' },
+  ];
 
-const accommodations = [
-  {
-    title: 'Accommodation 1',
-    description: 'Beautiful room in a shared house, close to UWC.',
-    image: 'https://via.placeholder.com/300',
-  },
-  {
-    title: 'Accommodation 2',
-    description: 'Spacious apartment with all amenities included.',
-    image: 'https://via.placeholder.com/300',
-  },
-  {
-    title: 'Accommodation 3',
-    description: 'Modern studio, 10 minutes from campus.',
-    image: 'https://via.placeholder.com/300',
-  },
-];
+  const [favoriteStates, setFavoriteStates] = useState(Array(accommodations.length).fill(false));
+  const [searchQuery, setSearchQuery] = useState('');
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [filteredAccommodations, setFilteredAccommodations] = useState(accommodations);
 
-const StudentHomePage = ({ route }) => {
-  const { username = 'Welcome!' } = route.params || {}; // Fallback for username
+  const toggleFavorite = (index) => {
+    const updatedFavorites = [...favoriteStates];
+    updatedFavorites[index] = !updatedFavorites[index];
+    setFavoriteStates(updatedFavorites);
+  };
 
-  const renderAccommodationItem = ({ item }) => (
-    <View style={styles.accommodationCard}>
-      <Image source={{ uri: item.image }} style={styles.accommodationImage} />
-      <Text style={styles.accommodationTitle}>{item.title}</Text>
-      <Text style={styles.accommodationDescription}>{item.description}</Text>
-    </View>
-  );
+  const handleSearch = (text) => {
+    setSearchQuery(text);
+    const filtered = accommodations.filter(accommodation =>
+      accommodation.title.toLowerCase().includes(text.toLowerCase())
+    );
+    setFilteredAccommodations(filtered);
+  };
 
   return (
-    <ScrollView style={styles.scrollContainer}>
-      <View style={styles.container}>
-        {/* Styled Name Container */}
-        <View style={styles.nameContainer}>
-          <Text style={styles.title}>{username}</Text>
-        </View>
-
-        {/* Icon Navigation Bar */}
+    <View style={styles.scrollContainer}>
+      <View style={styles.fixedNav}>
         <View style={styles.quickNav}>
-          <TouchableOpacity style={styles.navButton} onPress={() => alert('Search Accommodations')}>
-            <Ionicons name="search" size={30} color="#FFF" />
-            <Text style={styles.navText}>Search</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.navButton} onPress={() => alert('Favorites')}>
-            <Ionicons name="heart" size={30} color="#FFF" />
-            <Text style={styles.navText}>Favorites</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.navButton} onPress={() => alert('Messages')}>
-            <Ionicons name="chatbubbles" size={30} color="#FFF" />
-            <Text style={styles.navText}>Messages</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.navButton} onPress={() => alert('Profile')}>
-            <Ionicons name="person" size={30} color="#FFF" />
-            <Text style={styles.navText}>Profile</Text>
-          </TouchableOpacity>
+          {['Search', 'Favorites', 'Messages', 'Profile'].map((navItem, index) => (
+            <TouchableOpacity
+              key={index}
+              style={styles.navButton}
+              onPress={() => {
+                if (navItem === 'Search') {
+                  setIsSearchVisible(!isSearchVisible);
+                } else if (navItem === 'Favorites') {
+                  navigation.navigate('favoritePage');
+                } else {
+                  alert(navItem);
+                }
+              }}
+            >
+              <Ionicons
+                name={navItem === 'Search' ? 'search' : navItem === 'Favorites' ? 'heart' : navItem === 'Messages' ? 'chatbubbles' : 'person'}
+                size={24}
+                color="#FFF"
+              />
+              <Text style={styles.navText}>{navItem}</Text>
+            </TouchableOpacity>
+          ))}
         </View>
 
-        {/* Styled Accommodation Listings */}
-        <Text style={styles.sectionTitle}>Recommended Accommodations</Text>
-        <Carousel
-          data={accommodations}
-          renderItem={renderAccommodationItem}
-          sliderWidth={screenWidth}
-          itemWidth={screenWidth * 0.8} // Adjust as needed
-          layout="default"
-        />
+        {isSearchVisible && (
+          <TextInput
+            style={styles.searchInput}
+            placeholder="Search by area"
+            value={searchQuery}
+            onChangeText={handleSearch} // Call handleSearch directly on text change
+          />
+        )}
       </View>
-    </ScrollView>
+
+      <ScrollView style={[styles.container, isSearchVisible && styles.searchVisibleContainer]}>
+        <Text style={styles.sectionTitle}>Available Accommodations</Text>
+        <View style={styles.accommodationList}>
+          {filteredAccommodations.map((item, index) => (
+            <View key={index} style={styles.accommodationCard}>
+              <Image source={{ uri: item.image }} style={styles.accommodationImage} />
+              <Text style={styles.accommodationTitle}>{item.title}</Text>
+              <Text style={styles.accommodationDescription}>{item.description}</Text>
+              <View style={styles.buttonContainer}>
+                <TouchableOpacity style={styles.button} onPress={() => toggleFavorite(index)}>
+                  <Ionicons name="heart" size={16} color={favoriteStates[index] ? 'red' : '#FFF'} />
+                  <Text style={styles.buttonText}>Favorites</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ChatPage')}>
+                  <Ionicons name="chatbubbles" size={16} color="#FFF" />
+                  <Text style={styles.buttonText}>Message</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('ReviewsPage')}>
+                  <Ionicons name="star" size={16} color="#FFF" />
+                  <Text style={styles.buttonText}>Review</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          ))}
+        </View>
+      </ScrollView>
+    </View>
   );
 };
 
@@ -81,51 +108,57 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#F0F4F8',
   },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  nameContainer: {
+  fixedNav: {
     backgroundColor: '#00509E',
-    padding: 20,
-    borderRadius: 10,
-    marginBottom: 20,
-    alignItems: 'center',
+    paddingVertical: 10,
+    paddingTop: 50,
+    position: 'absolute',
+    top: 0,
     width: '100%',
-  },
-  title: {
-    fontSize: 28,
-    fontWeight: 'bold',
-    color: '#FFFFFF',
+    zIndex: 1000,
   },
   quickNav: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginBottom: 20,
-    width: '100%',
   },
   navButton: {
-    backgroundColor: '#00509E',
-    padding: 15,
-    borderRadius: 10,
     alignItems: 'center',
   },
   navText: {
     color: '#FFF',
     fontSize: 12,
   },
+  searchInput: {
+    backgroundColor: '#FFF',
+    borderRadius: 5,
+    padding: 10,
+    margin: 10,
+  },
+  container: {
+    marginTop: 120,
+    padding: 20,
+  },
+  searchVisibleContainer: {
+    marginTop: 180,
+  },
   sectionTitle: {
     fontSize: 22,
     fontWeight: 'bold',
     color: '#003366',
     marginBottom: 10,
-    alignSelf: 'flex-start',
+    textAlign: 'center',
+    width: '100%',
+    paddingVertical: 10,
+    borderBottomWidth: 2,
+    borderColor: '#00509E',
+  },
+  accommodationList: {
+    width: '100%',
   },
   accommodationCard: {
     backgroundColor: '#FFFFFF',
     padding: 15,
+    marginBottom: 15,
     borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -136,7 +169,7 @@ const styles = StyleSheet.create({
   },
   accommodationImage: {
     width: '100%',
-    height: 200, // Increased image size
+    height: 180,
     borderRadius: 10,
     marginBottom: 10,
   },
@@ -149,6 +182,27 @@ const styles = StyleSheet.create({
   accommodationDescription: {
     fontSize: 14,
     color: '#666',
+    marginBottom: 10,
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+  },
+  button: {
+    backgroundColor: '#00509E',
+    paddingVertical: 10,
+    paddingHorizontal: 15,
+    borderRadius: 5,
+    width: '30%',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: '#FFF',
+    fontSize: 12,
+    marginLeft: 5,
   },
 });
 

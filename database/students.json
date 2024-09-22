@@ -1,9 +1,23 @@
 [
   {
-    "studentNumber": "4129962",
+    "studentNumber": "4129961",
     "name": "Nkululeko",
     "surname": "Nhlapo",
-    "email": "4129962@myuwc.ac.za",
+    "email": "4129961@myuwc.ac.za",
     "password": "%Nl4129962"
+  },
+  {
+    "studentNumber": "4129963",
+    "name": "Zwane",
+    "surname": "Ntsele",
+    "email": "4129964@myuwc.ac.za",
+    "password": ")Zs4129963"
+  },
+  {
+    "studentNumber": "4129962",
+    "name": "Isaac",
+    "surname": "Mtsweni",
+    "email": "4129962@myuwc.ac.za",
+    "password": ")Is4129962"
   }
 ]
