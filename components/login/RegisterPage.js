@@ -44,7 +44,7 @@ const RegisterPage = ({ route, navigation }) => {
 
     // For students, generate a password and send it via email
     if (userType === 'Student') {
-      fetch('http://192.168.87.31:3000/registerStudent', {
+      fetch('http://172.25.26.198:3000/registerStudent', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,8 +67,9 @@ const RegisterPage = ({ route, navigation }) => {
     }
 
     // For landlords, verify and handle registration
+    //172.25.26.198
     if (userType === 'Landlord') {
-      fetch('192.168.87.31:3001/verifyLandlord', {
+      fetch('http://172.25.26.198:3001/verifyLandlord', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
