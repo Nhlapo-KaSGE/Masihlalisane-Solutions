@@ -14,6 +14,12 @@ import LandlordReviewsPage from './components/landlord/reviewsL';
 import FavoritePage from './components/student/favorite';
 import Chat from './components/student/chat';
 import ReviewsPage from './components/student/reviews';
+import MSL from './components/student/MSL.js';
+import Setting from './components/landlord/Setting.js'
+import SuggestedTenants from './components/landlord/SuggestedTenants.js'
+import Pros from './components/student/Pros.js'
+
+
 
 // Stack Navigator
 const Stack = createStackNavigator();
@@ -33,6 +39,11 @@ export default function App() {
         <Stack.Screen name="FavoritePage" component={FavoritePage} />
         <Stack.Screen name="Chat" component={Chat} />
         <Stack.Screen name="ReviewsPage" component={ReviewsPage} />
+        <Stack.Screen name="MSL" component={MSL} />
+        <Stack.Screen name="Setting" component={Setting} />
+        <Stack.Screen name="SuggestedTenants" component={SuggestedTenants} />
+        <Stack.Screen name="Pros" component={Pros} />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -19,7 +19,7 @@ const LoginPage = ({ route, navigation }) => {
       userType
     };
 
-    const endpoint = 'http://172.25.26.198:3002/login';
+    const endpoint = 'http://192.168.1.125:3002/login';
     // 172.25.26.198
     fetch(endpoint, {
       method: 'POST',

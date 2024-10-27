@@ -19,6 +19,18 @@ const LandlordHomePage = () => {
   const handleLandlordChatsPagePress = () => {
     navigation.navigate('LandlordChatsPage'); // Navigate to ReviewsPage
   };
+  const handleExitButtonPress = () =>{
+    navigation.navigate('BackgroundPage');
+  }
+  const handleSettingButtonPress = () =>{
+    navigation.navigate('Setting')
+  }
+  const handleSuggestedTenants = () =>{
+    navigation.navigate('SuggestedTenants')
+  }
+  
+
+  
 
   return (
     <View style={styles.dashboardContainer}>
@@ -72,7 +84,7 @@ const LandlordHomePage = () => {
         <TouchableOpacity style={styles.card}>
           <View style={styles.cardContent}>
             <View style={styles.textContainer}>
-              <Text style={styles.cardTitle}>Suggested Tenants</Text>
+              <Text style={styles.cardTitle} onPress={handleSuggestedTenants} > Suggested Tenants</Text>
               <Text style={styles.cardDescription}>View Suggested Tenants</Text>
             </View>
             <View style={styles.iconContainer}>
@@ -84,10 +96,10 @@ const LandlordHomePage = () => {
 
       {/* Exit & Settings buttons */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.smallButton}>
+        <TouchableOpacity style={styles.smallButton} onPress={handleExitButtonPress}>
           <Icon name="exit-to-app" size={24} color="#ffffff" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.smallButton}>
+        <TouchableOpacity style={styles.smallButton} onPress={handleSettingButtonPress}>
           <Icon name="settings" size={24} color="#ffffff" />
         </TouchableOpacity>
       </View>
